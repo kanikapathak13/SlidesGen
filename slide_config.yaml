@@ -1,0 +1,138 @@
+# Basic configuration for PPT generation without an external template
+
+# --- Core Settings ---
+
+
+# Default font to use if not specified otherwise
+default_font_name: "Noto Sans"
+
+# Default font color (Hex RGB)
+default_font_color_rgb: "222222"
+
+force_default_font_color: false # Set to true to force the default font color on all text elements
+force_default_font_name: false # Set to true to force the default font name on all text elements
+
+# --- Default Font Sizes (Points) ---
+default_title_font_size_pt: 32
+default_body_font_size_pt: 18
+default_subtitle_font_size_pt: 22
+default_caption_font_size_pt: 12
+default_notes_font_size_pt: 10
+
+# New: Control font size overrides when using a template_path
+# If true, the default_*_font_size_pt values above will override template defaults.
+# If false, the font sizes defined in the template file will be used.
+apply_font_size_overrides_with_template: false
+
+# --- Background ---
+# Set a solid background color for the master slide (applied if no template_path is set)
+# Leave blank or comment out for default white background
+# Example: "F0F0F0" for light gray
+master_background_color_rgb: "F5F5F5"
+
+# --- Alignment Defaults ---
+# Alignment ("LEFT", "CENTER", "RIGHT", "JUSTIFY") for specific elements within each layout
+# Layout 0: Title Slide
+alignment_layout_0_title: "CENTER"
+alignment_layout_0_subtitle: "CENTER"
+# Layout 1: Title and Content
+alignment_layout_1_title: "LEFT"
+alignment_layout_1_body: "LEFT"
+# Layout 2: Section Header
+alignment_layout_2_title: "LEFT"
+alignment_layout_2_body: "LEFT" # For the description/text placeholder
+# Layout 3: Two Content
+alignment_layout_3_title: "LEFT"
+alignment_layout_3_left_body: "LEFT"
+alignment_layout_3_right_body: "LEFT"
+# Layout 4: Comparison
+alignment_layout_4_title: "CENTER"
+alignment_layout_4_left_head: "LEFT"
+alignment_layout_4_right_head: "LEFT"
+alignment_layout_4_left_body: "LEFT"
+alignment_layout_4_right_body: "LEFT"
+# Layout 5: Title Only
+alignment_layout_5_title: "CENTER"
+# Layout 6: Blank (No standard text placeholders)
+# Layout 7: Content with Caption
+alignment_layout_7_title: "LEFT"
+alignment_layout_7_caption: "LEFT"
+alignment_layout_7_body: "LEFT" # For the main content/object placeholder if text is added
+# Layout 8: Picture with Caption
+alignment_layout_8_title: "LEFT"
+alignment_layout_8_caption: "LEFT"
+# Notes
+alignment_notes: "LEFT"
+
+# Default vertical anchor for text frames ("TOP", "MIDDLE", "BOTTOM")
+# This remains global for simplicity, can be overridden in code (e.g., Title Only slide)
+default_vertical_anchor: "TOP"
+
+# --- Dynamic Sizing & Formatting ---
+# Enable automatic reduction of body font size for slides with many items/long text
+enable_dynamic_body_font_size: true
+# Font size to use when dynamic reduction is triggered
+smaller_content_font_size_pt: 14
+# Thresholds for triggering dynamic body font size reduction
+dynamic_size_item_count_threshold: 4
+dynamic_size_char_count_threshold: 300
+
+# Font size reduction (in points) per indentation level
+indent_level_font_size_reduction_pt: 1
+# Minimum font size allowed after reductions
+min_font_size_pt: 10
+
+
+
+# --- Template Management ---
+current_theme: "organic" 
+
+templates:
+  default:
+    template_path: null
+    layout_mapping:
+      TITLE_SLIDE: 0
+      TITLE_AND_CONTENT: 1
+      SECTION_HEADER: 2
+      TWO_CONTENT: 3
+      COMPARISON: 4
+      TITLE_ONLY: 5
+      BLANK: 6
+      CONTENT_WITH_CAPTION: 7
+      PICTURE_WITH_CAPTION: 8
+  organic:
+    template_path: "./templates/Organic presentation.pptx"
+    layout_mapping:
+      TITLE_SLIDE: 0
+      TITLE_AND_CONTENT: 4
+      SECTION_HEADER: 5
+      TWO_CONTENT: 6
+      COMPARISON: 7
+      TITLE_ONLY: 5
+      BLANK: 13
+      CONTENT_WITH_CAPTION: 3
+      PICTURE_WITH_CAPTION: 11
+  frost:
+    template_path: "./templates/Frost design.pptx"
+    layout_mapping:
+      TITLE_SLIDE: 0
+      TITLE_AND_CONTENT: 8
+      SECTION_HEADER: 6 
+      TWO_CONTENT: 10
+      COMPARISON: 10
+      TITLE_ONLY: 2
+      BLANK: 43 
+      CONTENT_WITH_CAPTION: 11
+      PICTURE_WITH_CAPTION: 3
+  formal:
+    template_path: "./templates/Project status report.pptx"
+    layout_mapping:
+      TITLE_SLIDE: 0
+      TITLE_AND_CONTENT: 1
+      SECTION_HEADER: 2 
+      TWO_CONTENT: 14
+      COMPARISON: 3
+      TITLE_ONLY: 11
+      BLANK: 13
+      CONTENT_WITH_CAPTION: 15
+      PICTURE_WITH_CAPTION: 12

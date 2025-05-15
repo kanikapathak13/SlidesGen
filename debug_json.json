@@ -1,0 +1,178 @@
+{
+  "slides": [
+    {
+      "layout_idx": 0,
+      "title": "**Ecosystem Services**: Modelling and Future Scenarios",
+      "subtitle": "Predicting and Understanding the Benefits of Nature"
+    },
+    {
+      "layout_idx": 2,
+      "section_title": "Introduction to Ecosystem Service Modelling",
+      "section_description": "Overview of models used to assess and predict ecosystem services."
+    },
+    {
+      "layout_idx": 1,
+      "title": "What are Ecosystem Service Models?",
+      "content": [
+        "Tools to *predict* and *assess* ecosystem services.",
+        "Help understand the relationship between **social-ecological conditions** and service provision.",
+        "Used to evaluate the impact of land use and climate change.",
+        "Support decision-making for *sustainable resource management*."
+      ]
+    },
+    {
+      "layout_idx": 2,
+      "section_title": "Comparative Analysis of Ecosystem Service Models"
+    },
+    {
+      "layout_idx": 4,
+      "title": "Model Comparison: InVEST vs. LPJmL",
+      "left_heading": "**InVEST**",
+      "right_heading": "**LPJmL**",
+      "left_comparison_content": [
+        "Spatially-explicit, process-based models.",
+        "Broadly applicable, uses minimum data.",
+        "Modules for biophysical modelling and economic valuation.",
+        "Moderate time consumption, not technically specialized.",
+        "Emphasis on relationships among multiple services"
+      ],
+      "right_comparison_content": [
+        "Simulates vegetation dynamics and hydrological impacts.",
+        "Sensitive to land use and climate change.",
+        "Models mid- to long-term change.",
+        "Requires high-resolution climate data.",
+        "Time-consuming, technically specialized skills."
+      ]
+    },
+    {
+      "layout_idx": 4,
+      "title": "Model Comparison: ARIES",
+      "left_heading": "**ARIES**",
+      "right_heading": "**Key Features**",
+      "left_comparison_content": [
+        "Built from Bayesian belief networks.",
+        "Quantifies uncertainty in estimates.",
+        "Generic models adapted to specific applications.",
+        "Useful to quantify flows of services to beneficiaries.",
+        "Incorporates uncertainty measure through Bayesian networks and Monte Carlo simulation"
+      ],
+      "right_comparison_content": [
+        "Quantifies flows of services to beneficiaries.",
+        "Incorporates an uncertainty measure in its estimates done through Bayesian networks and Monte Carlo simulation",
+        "Time consuming models requiring technically specialized skills.",
+        "Models have a low level of generalization (speciﬁc application at particular social-ecological contexts)"
+      ]
+    },
+    {
+      "layout_idx": 1,
+      "title": "Advantages and Disadvantages of InVEST",
+      "content": [
+        "**Advantages:**",
+        "  - Broadly applicable across various contexts.",
+        "  - Uses minimum data, suitable for data-scarce regions.",
+        "  - Moderate time consumption, broad use.",
+        "  - Modules for biophysical modelling and economic valuation.",
+        "**Disadvantages:**",
+        "  - Models don't simultaneously feedback on one another.",
+        "  - Simple models, linear change assumption.",
+        "  - High uncertainty with coarse data and no validation."
+      ]
+    },
+    {
+      "layout_idx": 1,
+      "title": "Advantages and Disadvantages of LPJmL",
+      "content": [
+        "**Advantages:**",
+        "  - Useful for modelling mid- to long-term change.",
+        "  - Variability estimates over time.",
+        "**Disadvantages:**",
+        "  - Requires high-resolution climate data.",
+        "  - Time-consuming, technically specialized.",
+        "  - Low resolution of final outputs (50 km2)."
+      ]
+    },
+    {
+      "layout_idx": 1,
+      "title": "Advantages and Disadvantages of ARIES",
+      "content": [
+        "**Advantages:**",
+        "  - Useful to quantify flows of the services to beneﬁciaries.",
+        "  - Models incorporate an uncertainty measure in its estimates done through Bayesian networks and Monte Carlo simulation",
+        "**Disadvantages:**",
+        "  - Time consuming models requiring technically specialized skills.",
+        "  - Models have a low level of generalization (speciﬁc application at particular social-ecological contexts)"
+      ]
+    },
+    {
+      "layout_idx": 2,
+      "section_title": "Using Scenarios to Predict Future Ecosystem Services"
+    },
+    {
+      "layout_idx": 1,
+      "title": "The Power of Scenarios",
+      "content": [
+        "Scenarios are *plausible stories* about the future.",
+        "Help communicate outcomes of different choices.",
+        "Involve stakeholders in a learning process.",
+        "Inform more sustainable decisions."
+      ]
+    },
+    {
+      "layout_idx": 1,
+      "title": "Uses of Scenarios",
+      "content": [
+        "Assessing the impact of decisions under consideration.",
+        "Exploring hypothetical but plausible futures.",
+        "Building consensus around a shared vision for the future."
+      ]
+    },
+    {
+      "layout_idx": 1,
+      "title": "Characteristics of Effective Scenarios",
+      "content": [
+        "**Relevant:** Aligned with stakeholder interests.",
+        "**Legitimate:** Includes diverse stakeholder views.",
+        "**Credible:** Developed using scientifically robust methods.",
+        "**Plausible:** Tells coherent stories that could happen.",
+        "**Distinct:** Shows contrasting ecosystem service impacts."
+      ]
+    },
+    {
+      "layout_idx": 1,
+      "title": "Translating Scenarios to Decision-Support Tools",
+      "content": [
+        "Storylines made spatially-explicit.",
+        "Each scenario corresponds to a map of land cover or habitats.",
+        "Feed into biophysical and/or economic models.",
+        "Methods include stakeholder-drawn maps, forecasting based on past trends, and rule-based approaches."
+      ]
+    },
+    {
+      "layout_idx": 7,
+      "title": "LPJmL Sensitivity to Climate Change",
+      "caption_text": [
+        "LPJmL is highly sensitive to climate change.",
+        "Particularly helpful for looking at mid- to long-term effects.",
+        "Important for understanding future impacts on ecosystem services."
+      ],
+      "object_description": "Graph showing the projected impact of climate change on vegetation distribution and ecosystem services using LPJmL model.",
+      "notes": "Illustrate the model's capability to project climate change impacts."
+    },
+    {
+      "layout_idx": 8,
+      "picture_description": "Image of diverse landscapes representing different land use scenarios and their potential impact on ecosystem services.",
+      "caption_text": "Visualizing Future Landscapes: The Role of Scenarios",
+      "notes": "Showcase the visual representation of different future scenarios."
+    },
+    {
+      "layout_idx": 1,
+      "title": "Conclusion: Key Takeaways",
+      "content": [
+        "Ecosystem service models are crucial for understanding and predicting the benefits nature provides.",
+        "Different models have varying strengths and weaknesses, making them suitable for different applications.",
+        "Scenarios are powerful tools for exploring future possibilities and informing sustainable decisions.",
+        "Integrating stakeholder input and scientific rigor is essential for effective scenario development."
+      ]
+    }
+  ]
+}
